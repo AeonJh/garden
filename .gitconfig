@@ -1,0 +1,54 @@
+Personal
+[user]
+	name = AeonJh
+	email = aeonjh@qq.com
+	signingkey = B9ECAF224D0E2E6E
+
+[commit]
+	gpgSign = true
+
+
+; [include]
+; 	path = /home/aeonjh-wsl/.config/delta/catppuccin.gitconfig
+
+[core]
+	editor = nvim
+	; pager = delta
+
+[credential]
+	helper = cache
+
+; [interactive]
+; 	diffFilter = delta --color-only]
+
+; [delta]
+; 	features = catppuccin-mocha
+; 	navigate = true
+
+[merge]
+	conflictStyle = diff3
+
+[difftool]
+	prompt = true
+
+[diff]
+	colorMoved = default
+	algorithm = histogram
+	tool = nvimdiff
+
+[difftool "nvimdiff"]
+	cmd = nvim -d "$LOCAL" "$REMOTE"
+
+[safe]
+	directory = /usr/src/5.15.153.1-microsoft-standard-WSL2
+	directory = /usr/src/WSL2-Linux-Kernel
+
+[init]
+	defaultBranch = main
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+

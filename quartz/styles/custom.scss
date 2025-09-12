@@ -1,3 +1,88 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+.page[data-slug="index"] {
+  .page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--secondary) 0%, var(--tertiary) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.2;
+    }
+  }
+
+  .content {
+    max-width: 65ch;
+    margin: 0 auto;
+    line-height: 1.7;
+
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    h2 {
+      color: var(--secondary);
+      font-weight: 600;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0;
+        width: 3rem;
+        height: 2px;
+        background: linear-gradient(90deg, var(--secondary), var(--tertiary));
+        border-radius: 1px;
+      }
+    }
+
+    ul {
+      li {
+        margin-bottom: 0.75rem;
+
+        strong {
+          color: var(--secondary);
+        }
+      }
+    }
+
+    em {
+      font-style: italic;
+      color: var(--tertiary);
+    }
+  }
+}
+
+.page-title {
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--tertiary) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .page[data-slug="index"] {
+    .page-header h1 {
+      font-size: 2rem;
+    }
+
+    .content {
+      padding: 0 1rem;
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -1,3 +1,9 @@
+---
+title: "WSL2 内核模块丢失与蓝牙相关问题的分析与解决方案"
+date: 2026-04-09
+tags: ["error-handling", "programming", "wsl2", "linux-kernel", "bluetooth"]
+---
+
 # WSL2 自定义内核编译与蓝牙直通完整指南
 
 > **环境**: Ubuntu 22.04.5 LTS · WSL2 · Linux 6.6.123.2-microsoft-standard-WSL2+ · usbipd-win
